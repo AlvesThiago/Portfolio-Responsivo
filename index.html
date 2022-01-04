@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/253e186350.js" crossorigin="anonymous"></script>
+
+    <title>Your Name</title>
+
+</head>
+<body>
+
+    <!--Header-->
+    
+    <header>
+        <a href="#" class="logo">Your Name</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">home</a>
+            <a href="#trabalho">works</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>       
+        </nav>
+
+        <div class="icons">
+            <img src="image/menu.svg"  id="menu-bars">
+            <img src="image/heart.svg" >
+        </div>
+    </header>
+
+    <!--Header Fim-->
+
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span></span>
+                        <h3>Projeto Publico</h3>
+                        <p>Coloque seus textos</p>
+                        <a href="#contact" class="btn">Contact me</a>
+                    </div>
+                    <div class="image">
+                       <img src="image/image1.jpg" alt="">
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span></span>
+                        <h3>Projeto Publico</h3>
+                        <p>Coloque seus textos</p>
+                        <a href="#contact" class="btn">Contact me</a>
+                    </div>
+                    <div class="image">
+                       <img src="image/image2.jpg" alt="">
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span></span>
+                        <h3>Projeto Publico</h3>
+                        <p>Coloque seus textos</p>
+                        <a href="#contact" class="btn">Contact me</a>
+                    </div>
+                    <div class="image">
+                       <img src="image/image3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <!--Home fim -->
+
+
+    <!--GRID WORKS-->
+    <section class="works">
+        <h3 id="trabalho">Works</h3>
+            <div class="box_container">       
+                    <div class="box">
+                        <img src="image/computer.svg" alt="">
+                        <h2>Titulo</h2>
+                        <span>Coloque seus textos</span>
+                    </div>
+                    <div class="box">
+                        <img src="image/configuration.svg" alt="">
+                        <h2>Titulo</h2>
+                        <span>Coloque seus textos</span>
+                    </div>
+                    <div class="box">
+                        <img src="image/configuration.svg" alt="">
+                        <h2>Titulo</h2>
+                        <span>Coloque seus textos</span>
+                    </div>                                         
+            </div>
+    </section>
+
+    <!--GRID WORKS FIM-->
+
+    <!--About-->
+    <section class="home" id="home">
+        <div class=" home-slider">
+            <h2  id="about">SOBRE</h2>
+            <div class=" wrapper">
+                <div class=" slide">
+                    <div class="content">                       
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Recusandae error in sapiente nostrum dolores, unde id ex 
+                            cupiditate sequi optio non perferendis eligendi pariatur ab. 
+                            Sit dignissimos ab nobis quia?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            accusamus natus, veritatis quidem itaque sapiente, illum sint placeat,
+                            libero ad mollitia pariatur tempora. Dolorem modi corporis, repudiandae 
+                            vero nihil distinctio.</p>
+                    </div>
+                    <div class="image">
+                       <img src="image/log.svg" id="effect">
+                    </div>
+                </div>
+            </div>  
+        </div>     
+    </section>   
+    <!--About fim--> 
+
+    <!--CONTATO-->
+
+    <section class="contact_section">
+        <h2 class="section__title" id="contact">ENTRE EM CONTATO</h2>
+        <div class="contact__container ">
+            <div>
+                <div class="contact__information">
+                    <img src="image/call.svg">
+                    <div>
+                        <h3 class="contact__title">Telefone</h3>
+                        <span class="contact__subtitle">(99) 9 9999-9999</span>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <img src="image/email.svg">
+                    <div>
+                        <h3 class="contact__title">Email</h3>
+                        <span class="contact__subtitle">Your Email</span>
+                    </div>
+                </div>
+            </div> 
+
+        <!--Configure a Api entrando no site-->
+            <form action="https://api.staticforms.xyz/submit" method="post" class="contact__form grid"> 
+                <div class="contact__inputs">
+                    <div class="contact__content">  
+                        <input type="hidden" name="accessKey" value="...">
+                        <input type="hidden" name="redirectTo" value="https://thiagoalves.netlify.app/">
+                        <label for="" class="content__label">Name</label>
+                        <input type="text" name="name" class="contact__input">
+                    </div>
+                    <div class="contact__content">  
+                        <label for="" class="content__label">Email</label>
+                        <input type="email" name="email" class="contact__input">
+                    </div>
+                </div>
+                <div class="contact__content">  
+                    <label for="" class="content__label">Message</label>
+                    <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Send" class="button" />
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--CONTATO FIM-->
+
+    <!--MARGEM FINAL-->
+
+    <section class="fim">
+        <div class="fim_title">
+            <p>Esse site foi criado por <a href="#" target="_blank" rel="external">@thiago_4lv</a></p>
+        </div>
+    </section>
+    
+   <!--MARGEM FINAL-->
+
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
